@@ -1,0 +1,21 @@
+{
+    "name": "The Office",
+    "description": "Make site better",
+    "version": "1.0",
+    "manifest_version": 3,
+    "icons": {},
+    "action": {},
+    "permissions": [
+        "scripting"
+    ],
+    "host_permissions": [
+        "https://officeserial.ru/*"
+    ],
+    "content_scripts": [
+        {
+        "matches": ["https://officeserial.ru/*"],
+        "js": ["content.js"]
+        }
+    ],
+    "background":{}
+}
